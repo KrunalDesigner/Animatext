@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pureanimatext</title>
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="animaTextSimple.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400" rel="stylesheet">-->
+    <script src="jquery-2.1.3.min.js">
+
+
+    </script>
+    <script>
+        //    $(document).ready(function(){
+        //            $(".code").click(function(){
+        //                $(".showcode").fadeToggle();
+        //            });
+        //        });
+
+    </script>
+</head>
+
+<body>
+    <!--
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            font-family: TitilliumWeb;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .wrap {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        @font-face {
+            src: url(fonts/Titillium-Thin.otf);
+            font-family: TitilliumWeb;
+        }
+        
+        .header {
+            width: 100%;
+            height: auto;
+            min-height: 650px;
+            text-align: center;
+        }
+        
+        .h1bg {
+            width: 100%;
+            height: auto;
+        }
+        
+        @-ms-keyframes h1bg1 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg2 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg3 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg4 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg5 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg6 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg7 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg8 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-ms-keyframes h1bg9 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg1 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg2 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg3 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg4 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg5 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg6 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg7 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg8 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-o-keyframes h1bg9 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg1 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg2 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg3 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg4 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg5 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg6 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg7 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg8 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-moz-keyframes h1bg9 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg1 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg2 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg3 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg4 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg5 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg6 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg7 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg8 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        @-webkit-keyframes h1bg9 {
+            0% {}
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        
+        h1.title {
+            display: block;
+            margin-top: 200px;
+            /*14.5%*/
+            font-size: 5.5em;
+            font-weight: lighter;
+            line-height: 75px;
+        }
+        
+        .titleanimate span {
+            letter-spacing: -15px;
+            text-shadow: 0 6px 1px gainsboro;
+        }
+        
+        p.sub-title {
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            font-weight: 200;
+            line-height: 70px;
+        }
+        
+        .titleanimate span:nth-child(1) {
+            /*        animation-delay: 0.1s;*/
+            color: purple;
+            -webkit-animation: h1bg1 7s linear infinite alternate;
+            -moz-animation: h1bg1 7s linear infinite alternate;
+            -ms-animation: h1bg1 7s linear infinite alternate;
+            -o-animation: h1bg1 7s linear infinite alternate;
+            animation: h1bg1 7s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(2) {
+            /*        animation-delay: 0.2s;*/
+            color: purple;
+            -webkit-animation: h1bg2 7.5s linear infinite alternate;
+            -moz-animation: h1bg2 7.5s linear infinite alternate;
+            -ms-animation: h1bg2 7.5s linear infinite alternate;
+            -o-animation: h1bg2 7.5s linear infinite alternate;
+            animation: h1bg2 7.5s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(3) {
+            /*        animation-delay: 0.3s;*/
+            color: purple;
+            -webkit-animation: h1bg3 8s linear infinite alternate;
+            -moz-animation: h1bg3 8s linear infinite alternate;
+            -ms-animation: h1bg3 8s linear infinite alternate;
+            -o-animation: h1bg3 8s linear infinite alternate;
+            animation: h1bg3 8s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(4) {
+            /*        animation-delay: 0.4s;*/
+            color: purple;
+            -webkit-animation: h1bg4 8.5s linear infinite alternate;
+            -moz-animation: h1bg4 8.5s linear infinite alternate;
+            -ms-animation: h1bg4 8.5s linear infinite alternate;
+            -o-animation: h1bg4 8.5s linear infinite alternate;
+            animation: h1bg4 8.5s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(5) {
+            /*        animation-delay: 0.5s;*/
+            color: purple;
+            -webkit-animation: h1bg5 9s linear infinite alternate;
+            -moz-animation: h1bg5 9s linear infinite alternate;
+            -ms-animation: h1bg5 9s linear infinite alternate;
+            -o-animation: h1bg5 9s linear infinite alternate;
+            animation: h1bg5 9s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(6) {
+            /*        animation-delay: 0.7s;*/
+            color: purple;
+            -webkit-animation: h1bg6 9.5s linear infinite alternate;
+            -moz-animation: h1bg6 9.5s linear infinite alternate;
+            -o-animation: h1bg6 9.5s linear infinite alternate;
+            -ms-animation: h1bg6 9.5s linear infinite alternate;
+            animation: h1bg6 9.5s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(7) {
+            /*        animation-delay: 0.8s;*/
+            color: purple;
+            -webkit-animation: h1bg7 10s linear infinite alternate;
+            -moz-animation: h1bg7 10s linear infinite alternate;
+            -o-animation: h1bg7 10s linear infinite alternate;
+            -ms-animation: h1bg7 10s linear infinite alternate;
+            animation: h1bg7 10s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(8) {
+            /*        animation-delay: 0.9s;*/
+            color: purple;
+            -webkit-animation: h1bg8 10.5s linear infinite alternate;
+            -moz-animation: h1bg8 10.5s linear infinite alternate;
+            -ms-animation: h1bg8 10.5s linear infinite alternate;
+            -o-animation: h1bg8 10.5s linear infinite alternate;
+            animation: h1bg8 10.5s linear infinite alternate;
+        }
+        
+        .titleanimate span:nth-child(9) {
+            /*        animation-delay: 1s;*/
+            color: purple;
+            -webkit-animation: h1bg9 11s infinite linear alternate;
+            -ms-animation: h1bg9 11s infinite linear alternate;
+            -ms-animation: h1bg9 11s infinite linear alternate;
+            -moz-animation: h1bg9 11s infinite linear alternate;
+            -o-animation: h1bg9 11s infinite linear alternate;
+            animation: h1bg9 11s infinite linear alternate;
+        }
+        
+        @keyframes titleanimate {
+            /*25%{color: rebeccapurple;letter-spacing: -3.5px;}50%{color: red;}75%{color: green;}100%, 0%{color: blue;}*/
+        }
+        
+        @-webkit-keyframes titleanimate {
+            /*25%{color: rebeccapurple;letter-spacing: -3.5px;}50%{color: red;}75%{color: green;}100%, 0%{color: blue;}*/
+        }
+        
+        @-moz-keyframes titleanimate {
+            /*25%{color: rebeccapurple;letter-spacing: -3.5px;}50%{color: red;}75%{color: green;}100%, 0%{color: blue;}*/
+        }
+        
+        @-ms-keyframes titleanimate {
+            /*25%{color: rebeccapurple;letter-spacing: -3.5px;}50%{color: red;}75%{color: green;}100%, 0%{color: blue;}*/
+        }
+        
+        @-o-keyframes titleanimate {
+            /*25%{color: rebeccapurple;letter-spacing: -3.5px;}50%{color: red;}75%{color: green;}100%, 0%{color: blue;}*/
+        }
+        
+        a.tryit {
+            width: 150px;
+            height: 35px;
+            border: 1px solid;
+            border-radius: 7px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 35px;
+            text-decoration: none;
+            margin-top: 40px;
+            animation: tryitbtn 25s infinite linear;
+            -webkit-animation: tryitbtn 25s infinite linear;
+            -moz-animation: tryitbtn 25s infinite linear;
+            -ms-animation: tryitbtn 25s infinite linear;
+            -o-animation: tryitbtn 25s infinite linear;
+        }
+        
+        a.tryit:hover {
+            opacity: 0.7;
+        }
+        
+        @keyframes tryitbtn {
+            0% {}
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+        
+        @-webkit-keyframes tryitbtn {
+            0% {}
+            100% {
+                -webkit-filter: hue-rotate(360deg);
+            }
+        }
+        
+        @-moz-keyframes tryitbtn {
+            0% {}
+            100% {
+                -moz-filter: hue-rotate(360deg);
+            }
+        }
+        
+        @-o-keyframes tryitbtn {
+            0% {}
+            100% {
+                -o-filter: hue-rotate(360deg);
+            }
+        }
+        
+        @-ms-keyframes tryitbtn {
+            0% {}
+            100% {
+                -ms-filter: hue-rotate(360deg);
+            }
+        }
+        
+        .animatectr {
+            width: 60%;
+            height: 100%;
+            background-color: inherit;
+            float: left;
+        }
+        
+        .animatectrl {
+            width: 40%;
+            height: 100%;
+            background-color: inherit;
+            float: right;
+        }
+        
+        .animatectrl nav {
+            margin-top: 10px;
+        }
+        
+        .animatectrl nav ul li {
+            display: inline-block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2px 20px;
+        }
+        
+        .animatectrl nav ul li.active {
+            background-color: rgba(220, 220, 220, .5);
+            background: linear-gradient(145deg, rgba(128, 0, 128, .004), rgba(128, 0, 128, .1));
+            background: -webkit-linear-gradient(145deg, rgba(128, 0, 128, .004), rgba(128, 0, 128, .1));
+            background: -moz-linear-gradient(145deg, rgba(128, 0, 128, .004), rgba(128, 0, 128, .1));
+            background: -ms-linear-gradient(145deg, rgba(128, 0, 128, .004), rgba(128, 0, 128, .1));
+            background: -o-linear-gradient(145deg, rgba(128, 0, 128, .004), rgba(128, 0, 128, .1));
+            animation: myy 5s linear infinite;
+            -webkit-animation: myy 5s linear infinite;
+            -moz-animation: myy 5s linear infinite;
+            -ms-animation: myy 5s linear infinite;
+            -o-animation: myy 5s linear infinite;
+        }
+        
+        @keyframes myy {
+            0% {
+                filter: hue-rotate(395deg);
+            }
+            100% {}
+        }
+        
+        @-webkit-keyframes myy {
+            0% {
+                filter: hue-rotate(395deg);
+            }
+            100% {}
+        }
+        
+        @-moz-keyframes myy {
+            0% {
+                filter: hue-rotate(395deg);
+            }
+            100% {}
+        }
+        
+        @-ms-keyframes myy {
+            0% {
+                filter: hue-rotate(395deg);
+            }
+            100% {}
+        }
+        
+        @-o-keyframes myy {
+            0% {
+                filter: hue-rotate(395deg);
+            }
+            100% {}
+        }
+        
+        .animatectrl nav ul li.active a {
+            color: black;
+        }
+        
+        .animatectrl nav ul li:hover {
+            background-color: rgba(220, 220, 220, .8);
+        }
+        
+        .animatectrl nav ul li:hover a {
+            color: black;
+        }
+        
+        .animatectrl nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .main {
+            height: 100%;
+        }
+        
+        h2 {
+            font-size: 38px;
+            font-family: TitilliumWeb;
+            margin-top: 50px;
+        }
+        
+        h2 span {
+            font-family: TitilliumWeb;
+            font-weight: 600;
+            text-shadow: 0 5px 3px rgba(0, 0, 0, .130);
+        }
+        
+        .code {
+            display: inline-block;
+            width: 50%;
+            height: 350px;
+            /*        background: gainsboro;*/
+            /*        border: 1px solid transparent;*/
+            border: 1px solid rgba(0, 0, 0, .055);
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            margin-left: 24.7%;
+            color: transparent;
+            box-sizing: border-box;
+            transition: 500ms;
+            -webkit-transition: 500ms;
+            -moz-transition: 500ms;
+            -ms-transition: 500ms;
+        }
+        
+        .code:hover {
+            color: inherit;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, .055);
+        }
+        
+        .code:hover:before {
+            color: transparent;
+        }
+        
+        .code:before {
+            content: 'Code is Here...';
+            position: absolute;
+            font-size: 28px;
+            text-align: center;
+            margin-left: 10%;
+            color: black;
+            transition: 500ms;
+            -webkit-transition: 500ms;
+            -moz-transition: 500ms;
+            -ms-transition: 500ms;
+        }
+        
+        a.top {
+            width: 150px;
+            height: 35px;
+            border-radius: 4px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 35px;
+            text-decoration: none;
+            background-color: gray;
+            color: white;
+            text-transform: capitalize;
+            margin-top: 0px;
+            box-shadow: 0 5px 5px gray;
+            border: 1px solid white;
+            float: left;
+            margin-left: 25%;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            -moz-transition: 300ms;
+            -ms-transition: 300ms;
+        }
+        
+        a.top:hover {
+            box-shadow: 0 0px 1px gray;
+            border: 1px solid white;
+        }
+        
+        a.preview {
+            width: 150px;
+            height: 35px;
+            border-radius: 4px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-left: 100px;
+            line-height: 35px;
+            text-decoration: none;
+            background-color: gray;
+            color: white;
+            text-transform: capitalize;
+            margin-top: 0px;
+            box-shadow: 0 5px 5px gray;
+            border: 1px solid white;
+            float: left;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            -moz-transition: 300ms;
+            -ms-transition: 300ms;
+        }
+        
+        a.preview:hover {
+            box-shadow: 0 0px 1px gray;
+            border: 1px solid white;
+        }
+        
+        .perinfo {
+            margin-top: 20px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 1%;
+        }
+        
+        .perinfo a {
+            line-height: 40px;
+            padding: 0 30px;
+            text-decoration: none;
+            font-size: 16px;
+            color: blueviolet;
+            opacity: 0.6;
+        }
+        
+        .perinfo a:hover {
+            color: blueviolet;
+            opacity: 1;
+        }
+        
+        .perinfo a.useitfir {
+            border-right: 1px solid gainsboro;
+            color: blue;
+        }
+        
+        
+        
+    </style>
+    <div class="main">
+        <div class="wrap">
+            <section class="header">
+                <div class="h1bg">
+                    <h1 class="title titleanimate">
+            <span>A</span>
+            <span>n</span>
+            <span>i</span>
+            <span>m</span>
+            <span>a</span>
+            <span>T</span>
+            <span>e</span>
+            <span>x</span>
+            <span>t</span>
+        </h1>
+                </div>
+
+                <p class="sub-title animaTextSimple">
+                    Animatext is pure css based Text Animations</p>
+                <a href="#animaTextSimple" class="tryit">Just Try it</a>
+                <div class="perinfo">
+                    <p class="useit"><a class="useitfir" href="">Download now</a>
+                        <a class="useitsec" href="">Write Something...</a></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextSimple">
+            <section class="animatectr">
+                <div class="animaTextSimple">
+                    <h2>
+            <span>s</span>	
+            <span>i</span>	
+            <span>m</span>	
+            <span>p</span>	
+            <span>l</span>	
+            <span>e</span>
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextSimple"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;M&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextSimple"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;SIMPLE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextSimple" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="TextSimple">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#animaTextSimple" onclick="window.location.reload()">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextHidden">
+            <section class="animatectr">
+                <div class="animaTextHidden">
+                    <h2>
+            <span>h</span>	
+            <span>i</span>	
+            <span>d</span>	
+            <span>d</span>	
+            <span>e</span>	
+            <span>n</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextHidden"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;H&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextHidden"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;HIDDEN&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextHidden" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+                <!--        <input type="button" value="Refresh Page" onclick="window.location.reload()">-->
+            </section>
+            <section class="animatectrl" data="Hidden">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextHidden" onclick="window.location.reload()">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextTitle">
+            <section class="animatectr">
+                <div class="animaTextTitle">
+                    <h2>
+            <span>t</span>	
+            <span>i</span>	
+            <span>t</span>	
+            <span>l</span>	
+            <span>e</span>  
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextTitle"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextTitle"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;TITLE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextTitle" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+                <!--        <input type="button" value="Refresh Page" onclick="window.location.reload()">-->
+            </section>
+            <section class="animatectrl" data="Title">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextTitle" onclick="window.location.reload()">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRoundUp">
+            <section class="animatectr">
+                <div class="animaTextRoundUp">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>u</span>	
+            <span>n</span>	
+            <span>d</span>  
+            <span>u</span>  
+            <span>p</span>  
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRoundUp"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRoundUp"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROUNDUP&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRoundUp" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+                <!--        <input type="button" value="Refresh Page" onclick="window.location.reload()">-->
+            </section>
+            <section class="animatectrl" data="animaTextRoundUp">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRoundUp" onclick="window.location.reload()">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextZoomer">
+            <section class="animatectr">
+                <div class="animaTextZoomer">
+                    <h2>
+            <span>z</span>	
+            <span>o</span>	
+            <span>o</span>	
+            <span>m</span>	
+            <span>e</span>  
+            <span>r</span>  
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextZoomer"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;Z&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;M&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextZoomer"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ZOOMER&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextZoomer" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextZoomer">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextZoomer" onclick="window.location.reload()">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextBlur">
+            <section class="animatectr">
+                <div class="animaTextBlur">
+                    <h2>
+            <span>b</span>	
+            <span>l</span>	
+            <span>u</span>	
+            <span>r</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextBlur"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;B&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextBlur"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;BLUR&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextBlur" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextBlur">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextBlur" onclick="window.location.reload()">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRotater">
+            <section class="animatectr">
+                <div class="animaTextRotater">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+            <span>r</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRotater"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRotater"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROTATER&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRotater" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextRotater">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRotater" onclick="window.location.reload()">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRotateV">
+            <section class="animatectr">
+                <div class="animaTextRotateV">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+            <span>v</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRotateV"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;V&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRotateV"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROTATEV&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRotateV" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextRotateV">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRotateV" onclick="window.location.reload()">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRotateH">
+            <section class="animatectr">
+                <div class="animaTextRotateH">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+            <span>h</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRotateH"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;H&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRotateH"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROTATEH&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRotateH" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextRotateH">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRotateH" onclick="window.location.reload()">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextFade">
+            <section class="animatectr">
+                <div class="animaTextFade">
+                    <h2>
+            <span>f</span>	
+            <span>a</span>	
+            <span>d</span>	
+            <span>e</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextFade"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;F&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextFade"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;FADE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextFade" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextFade">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextFade" onclick="window.location.reload()">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextDna">
+            <section class="animatectr">
+                <div class="animaTextDna">
+                    <h2>
+                        <span>d</span>	
+                        <span>n</span>	
+                        <span>a</span>	
+                    </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextDna"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextDna"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;DNA&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextDna" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextDna">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextDna" onclick="window.location.reload()">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextStarLight">
+            <section class="animatectr">
+                <div class="animaTextStarLight">
+                    <h2>
+            <span>s</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>r</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>g</span>	
+            <span>h</span>	
+            <span>t</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextStarLight"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;G&lt;&frasl;span&gt;    
+                    &lt;span&gt;H&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextStarLight"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;STARLIGHT&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextStarLight" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextStarLight">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextStarLight" onclick="window.location.reload()">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRotateIn">
+            <section class="animatectr">
+                <div class="animaTextRotateIn">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+            <span>i</span>	
+            <span>n</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRotateIn"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRotateIn"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROTATEIN&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRotateIn" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextRotateIn">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRotateIn" onclick="window.location.reload()">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextRotateOut">
+            <section class="animatectr">
+                <div class="animaTextRotateOut">
+                    <h2>
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+            <span>o</span>	
+            <span>u</span>	
+            <span>t</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextRotateOut"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextRotateOut"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ROTATEOUT&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextRotateOut" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextRotateOut">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextRotateOut" onclick="window.location.reload()">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextHeadline">
+            <section class="animatectr">
+                <div class="animaTextHeadline">
+                    <h2>
+            <span>h</span>	
+            <span>e</span>	
+            <span>a</span>	
+            <span>d</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>n</span>	
+            <span>e</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextHeadline"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;H&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextHeadline"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;HEADLINE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextHeadline" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextHeadline">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextHeadline" onclick="window.location.reload()">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextZoomOut">
+            <section class="animatectr">
+                <div class="animaTextZoomOut">
+                    <h2>
+            <span>z</span>	
+            <span>o</span>	
+            <span>o</span>	
+            <span>m</span>	
+            <span>o</span>	
+            <span>u</span>	
+            <span>t</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextZoomOut"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;Z&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;M&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextZoomOut"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;ZOOMOUT&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextZoomOut" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextZoomOut">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextZoomOut" onclick="window.location.reload()">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextSlide">
+            <section class="animatectr">
+                <div class="animaTextSlide">
+                    <h2>
+            <span>s</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>d</span>	
+            <span>e</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextSlide"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;D&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextSlide"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;SLIDE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextSlide" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextSlide">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextSlide" onclick="window.location.reload()">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextFlipInX">
+            <section class="animatectr">
+                <div class="animaTextFlipInX">
+                    <h2>
+            <span>f</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>p</span>	
+            <span>i</span>	
+            <span>n</span>	
+            <span>x</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextFlipInX"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;F&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;X&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextFlipInX"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;FLIPINX&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextFlipInX" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextFlipInX">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextFlipInX" onclick="window.location.reload()">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextFlipInY">
+            <section class="animatectr">
+                <div class="animaTextFlipInY">
+                    <h2>
+            <span>f</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>p</span>	
+            <span>i</span>	
+            <span>n</span>	
+            <span>y</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextFlipInY"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;F&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;Y&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextFlipInY"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;FLIPINY&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextFlipInY" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextFlipInY">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextFlipInY" onclick="window.location.reload()">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextFlipRotate">
+            <section class="animatectr">
+                <div class="animaTextFlipRotate">
+                    <h2>
+            <span>f</span>	
+            <span>l</span>	
+            <span>i</span>	
+            <span>p</span>	
+            <span>r</span>	
+            <span>o</span>	
+            <span>t</span>	
+            <span>a</span>	
+            <span>t</span>	
+            <span>e</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextFlipRotate"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;F&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;O&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;T&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextFlipRotate"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;FLIPROTATE&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextFlipRotate" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextFlipRotate">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextFlipRotate" onclick="window.location.reload()">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextScaleInX">
+            <section class="animatectr">
+                <div class="animaTextScaleInX">
+                    <h2>
+            <span>s</span>	
+            <span>c</span>	
+            <span>a</span>	
+            <span>l</span>	
+            <span>e</span>	
+            <span>i</span>	
+            <span>n</span>	
+            <span>x</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextScaleInX"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;C&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;X&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextScaleInX"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;SCALEINX&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextScaleInX" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextScaleInX">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextScaleInX" onclick="window.location.reload()">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextScaleInY">
+            <section class="animatectr">
+                <div class="animaTextScaleInY">
+                    <h2>
+            <span>s</span>	
+            <span>c</span>	
+            <span>a</span>	
+            <span>l</span>	
+            <span>e</span>	
+            <span>i</span>	
+            <span>n</span>	
+            <span>y</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextScaleInY"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;C&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;L&lt;&frasl;span&gt;    
+                    &lt;span&gt;E&lt;&frasl;span&gt;    
+                    &lt;span&gt;I&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                    &lt;span&gt;Y&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextScaleInY"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;SCALEINY&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextScaleInY" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextScaleInY">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextScaleInY" onclick="window.location.reload()">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextSpash">
+            <section class="animatectr">
+                <div class="animaTextSpash">
+                    <h2>
+            <span>s</span>	
+            <span>p</span>	
+            <span>a</span>	
+            <span>s</span>	
+            <span>h</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextSpash"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;P&lt;&frasl;span&gt;    
+                    &lt;span&gt;A&lt;&frasl;span&gt;    
+                    &lt;span&gt;S&lt;&frasl;span&gt;    
+                    &lt;span&gt;H&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextSpash"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;SPASH&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextSpash" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextSpash">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextSpash" onclick="window.location.reload()">Spash Animation Effect</a></li>
+                        <li><a href="#animaTextBurn">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <div class="wrap" id="animaTextBurn">
+            <section class="animatectr">
+                <div class="animaTextBurn">
+                    <h2>
+            <span>b</span>	
+            <span>u</span>	
+            <span>r</span>	
+            <span>n</span>	
+        </h2>
+                </div>
+                <div class="code">
+                    <pre>
+            // Single Text Animation
+            &lt;div class="animaTextBurn"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;B&lt;&frasl;span&gt;    
+                    &lt;span&gt;U&lt;&frasl;span&gt;    
+                    &lt;span&gt;R&lt;&frasl;span&gt;    
+                    &lt;span&gt;N&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+
+            // Single Word Animation
+            &lt;div class="animaTextBurn"&gt; 
+                &lt;h2&gt;
+                    &lt;span&gt;BURN&lt;&frasl;span&gt;    
+                &lt;&frasl;h2&gt;
+            &lt;&frasl;div&gt;
+            </pre>
+                </div>
+                <p><a href="index.html" class="top">Download Now</a></p>
+                <p><a href="#animaTextBurn" class="preview" value="Refresh Page" onclick="window.location.reload()">Animation Preview</a></p>
+            </section>
+            <section class="animatectrl" data="animaTextBurn">
+                <nav>
+                    <ul>
+                        <li><a href="#animaTextSimple">Simple Animation Effect</a></li>
+                        <li><a href="#animaTextHidden">Hidden Animation Effect</a></li>
+                        <li><a href="#animaTextTitle">Title Animation Effect</a></li>
+                        <li><a href="#animaTextRoundUp">RoundUp Animation Effect</a></li>
+                        <li><a href="#animaTextZoomer">Zoomer Animation Effect</a></li>
+                        <li><a href="#animaTextBlur">Blur Animation Effect</a></li>
+                        <li><a href="#animaTextRotater">Rotater Animation Effect</a></li>
+                        <li><a href="#animaTextRotateV">RotateV Animation Effect</a></li>
+                        <li><a href="#animaTextRotateH">RotateH Animation Effect</a></li>
+                        <li><a href="#animaTextFade">Fade Animation Effect</a></li>
+                        <li><a href="#animaTextDna">Dna Animation Effect</a></li>
+                        <li><a href="#animaTextStarLight">StarLight Animation Effect</a></li>
+                        <li><a href="#animaTextRotateIn">RotateIn Animation Effect</a></li>
+                        <li><a href="#animaTextRotateOut">RotateOut Animation Effect</a></li>
+                        <li><a href="#animaTextHeadline">Headline Animation Effect</a></li>
+                        <li><a href="#animaTextZoomOut">ZoomOut Animation Effect</a></li>
+                        <li><a href="#animaTextSlide">Slide Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInX">FlipInX Animation Effect</a></li>
+                        <li><a href="#animaTextFlipInY">FlipInY Animation Effect</a></li>
+                        <li><a href="#animaTextFlipRotate">FlipRotate Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInX">ScaleInX Animation Effect</a></li>
+                        <li><a href="#animaTextScaleInY">ScaleInY Animation Effect</a></li>
+                        <li><a href="#animaTextSpash">Spash Animation Effect</a></li>
+                        <li class="active"><a href="#animaTextBurn" onclick="window.location.reload()">Burn Animation Effect</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+
+    </div>
+    <!-- main -->
+    <!--
+animaTextSimple
+animaTextHidden
+animaTextTitle
+animaTextRoundUp
+animaTextZoomer
+animaTextBlur
+animaTextRotater
+animaTextRotateV
+animaTextRotateH
+animaTextFade
+animaTextDna
+animaTextStarLight
+animaTextRotateIn
+animaTextHeadline
+animaTextZoomOut
+animaTextSlide
+animaTextFlipInX
+animaTextFlipInY
+animaTextFlipRotate
+animaTextScaleInX
+animaTextScaleInY
+animaTextSpash
+animaTextBurn
+-->
+
+    <div class="animatextdemo dpnone">
+        <div class="animaTextBurn infinite">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
