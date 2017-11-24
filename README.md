@@ -10,7 +10,7 @@ Find me on Youtube : <br> <b>Name :</b> LearnDesign   <br> <b>Url :</b> https://
 Installation : <br>
 1st - download and link you html page inside a head tag<br>
 2nd - copy and past below the code<br>
-note: do not copy the code directly on github, you can download README.md file, and open this file and after copy this code.
+> note : do not copy the code directly on github, you can download README.md file, and open this file and after copy this code. 
 
 <div class="animaTextFade infinite">
   <h1>
