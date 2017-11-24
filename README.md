@@ -10,5 +10,12 @@ Find me on Youtube : <br> <b>Name :</b> LearnDesign   <br> <b>Url :</b> https://
 Installation : <br>
 1st - download and link you html page inside a head tag<br>
 2nd - copy and past below the code<br>
+note: do not copy the code directly on github, you can download README.md file, and open this file and after copy this code.
 
-<div class="animaTextFade infinite"><h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span></h1></div>
+<div class="animaTextFade infinite">
+  <h1>
+    <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+  </h1>
+</div>
+
+
