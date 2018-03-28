@@ -1,9 +1,7 @@
 
 # Animatext is Simple CSS Based Text Animation - Just Try it
 <b>Created by :</b> KrunalDesigner <br>
-<b>Inspired by :</b> Animate.css created by Denial Eden <br>
-<b>KrunalDesiner Short Bio</b> : KrunalDeisgner is one of the best designer in india and He is a First Multidisciplinary Designer in india. <br>
-any questions so feel free to contact this <b>email</b> : help.learndesign@gmail.com <br>
+any questions so feel free to contact this <b>email</b> : krunalsabhadiya123@gmail.com <br>
 
 Find me on Youtube : <br> <b>Name :</b> LearnDesign   <br> <b>Url :</b> https://www.youtube.com/channel/UCWCcoBXOXpNMg0p8Qrn2l0g
 
