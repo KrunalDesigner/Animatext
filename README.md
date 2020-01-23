@@ -1,19 +1,21 @@
 
 # Animatext is Simple CSS Based Text Animation - Just Try it
 <b>Created by :</b> KrunalDesigner <br>
-any questions so feel free to contact this <b>email</b> : krunalsabhadiya123@gmail.com <br>
 
-Find me on Youtube : <br> <b>Name :</b> LearnDesign   <br> <b>Url :</b> https://www.youtube.com/channel/UCWCcoBXOXpNMg0p8Qrn2l0g
-
-Installation : <br>
+# Installation : <br>
 1st - download and link you html page inside a head tag<br>
-2nd - copy and past below the code<br>
-> note : do not copy the code directly on github, you can download README.md file, and open this file and after copy this code. 
 
-<div class="animaTextFade infinite">
-  <h1>
-    <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
-  </h1>
-</div>
-
-
+e.g.
+<html>
+  <head>
+    <title></title>
+    <link href="css/animatext.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="animaTextFade infinite">
+      <h1>
+        <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+      </h1>
+    </div>
+  </body>
+</html>
