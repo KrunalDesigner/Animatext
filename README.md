@@ -6,6 +6,7 @@
 1st - download and link you html page inside a head tag<br>
 
 e.g.
+
 <html>
   <head>
     <title></title>
